@@ -1,0 +1,21 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.products-list {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.product-row.header {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr 1fr 100px;
+  gap: 12px;
+  align-items: center;
+  padding: 14px 10px;
+  background: #edf3fc;
+  font-weight: bold;
+  border-bottom: 2px solid #cbd5e1;
+  box-sizing: border-box;
+}

@@ -1,0 +1,8 @@
+<div class="product-row">
+  <span>{{ product.name }}</span>
+  <span>${{ product.price.toFixed(2) }}</span>
+  <span>{{ product.department }}</span>
+  <span>{{ product.sku }}</span>
+
+  <button (click)="delete()">Delete</button>
+</div>

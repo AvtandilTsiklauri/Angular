@@ -1,0 +1,25 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.product-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr 1fr 100px;
+  gap: 12px;
+  align-items: center;
+  padding: 14px 10px;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.product-row span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+button {
+  padding: 8px 12px;
+  white-space: nowrap;
+  cursor: pointer;
+}

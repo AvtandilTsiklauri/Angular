@@ -1,0 +1,19 @@
+<div class="products-list">
+  <h2>Product Inventory</h2>
+
+  <div class="product-row header">
+    <span>Name</span>
+    <span>Price</span>
+    <span>Department</span>
+    <span>SKU</span>
+    <span>Action</span>
+  </div>
+
+  <app-product-row
+    *ngFor="let product of products"
+    [product]="product"
+    (deleteProduct)="deleteProduct.emit($event)">
+  </app-product-row>
+
+  <p *ngIf="products.length === 0">No products available.</p>
+</div>
